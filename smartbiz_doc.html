@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Documentation</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glow-card {
+            transition: all 0.3s ease;
+        }
+
+        .glow-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(102, 126, 234, 0.25),
+                        0 0 40px rgba(240, 147, 251, 0.15);
+        }
+
+        .badge {
+            background: rgba(102, 126, 234, 0.2);
+            border: 1px solid rgba(102, 126, 234, 0.4);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+
+<!-- HEADER -->
+<header class="text-center py-16 px-4">
+    <h1 class="text-4xl md:text-5xl font-bold gradient-text">
+        Project Name
+    </h1>
+    <p class="text-gray-300 mt-4 max-w-2xl mx-auto">
+        Short modern description of your project goes here
+    </p>
+</header>
+
+<!-- CONTAINER -->
+<div class="max-w-6xl mx-auto px-4 space-y-8 pb-20">
+
+    <!-- OVERVIEW -->
+    <section class="glass rounded-2xl p-6 glow-card">
+        <h2 class="text-2xl font-semibold mb-4 gradient-text">📌 Project Overview</h2>
+        <p class="text-gray-300 leading-relaxed">
+            Write here what your project does, who it is for, and what problem it solves.
+        </p>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="glass rounded-2xl p-6 glow-card">
+        <h2 class="text-2xl font-semibold mb-4 gradient-text">⚙️ Tech Stack</h2>
+
+        <div class="flex flex-wrap gap-3">
+            <span class="badge px-3 py-1 rounded-full text-sm">Laravel</span>
+            <span class="badge px-3 py-1 rounded-full text-sm">Node.js</span>
+            <span class="badge px-3 py-1 rounded-full text-sm">MongoDB</span>
+            <span class="badge px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="glass rounded-2xl p-6 glow-card">
+        <h2 class="text-2xl font-semibold mb-4 gradient-text">🚀 Features</h2>
+
+        <ul class="space-y-2 text-gray-300 list-disc list-inside">
+            <li>User authentication (login/register)</li>
+            <li>Cart & checkout system</li>
+            <li>Order tracking system</li>
+            <li>Admin dashboard</li>
+        </ul>
+    </section>
+
+    <!-- SCREENSHOTS -->
+   <!-- SCREENSHOTS -->
+<section class="glass rounded-2xl p-6 glow-card">
+    <h2 class="text-2xl font-semibold mb-6 gradient-text">📸 Screenshots</h2>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- Screenshot 1 -->
+        <div class="relative group">
+            <img src="screenshot1.png"
+                 class="rounded-xl border border-gray-700 w-full" />
+
+            <div class="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-sm p-3 rounded-b-xl opacity-0 group-hover:opacity-100 transition">
+                🛒 Product listing page with add-to-cart functionality
+            </div>
+        </div>
+
+        <!-- Screenshot 2 -->
+        <div class="relative group">
+            <img src="screenshot2.png"
+                 class="rounded-xl border border-gray-700 w-full" />
+
+            <div class="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-sm p-3 rounded-b-xl opacity-0 group-hover:opacity-100 transition">
+                🧾 Checkout page with order summary and payment options
+            </div>
+        </div>
+
+        <!-- Screenshot 3 -->
+        <div class="relative group">
+            <img src="screenshot3.png"
+                 class="rounded-xl border border-gray-700 w-full" />
+
+            <div class="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-sm p-3 rounded-b-xl opacity-0 group-hover:opacity-100 transition">
+                📦 Order tracking system with real-time status updates
+            </div>
+        </div>
+
+        <!-- Screenshot 4 -->
+        <div class="relative group">
+            <img src="screenshot4.png"
+                 class="rounded-xl border border-gray-700 w-full" />
+
+            <div class="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-sm p-3 rounded-b-xl opacity-0 group-hover:opacity-100 transition">
+                🛠️ Admin dashboard for managing products and orders
+            </div>
+        </div>
+
+    </div>
+</section>
+    <!-- LINKS -->
+    <section class="glass rounded-2xl p-6 glow-card">
+        <h2 class="text-2xl font-semibold mb-4 gradient-text">🔗 Links</h2>
+
+        <div class="flex gap-4 flex-wrap">
+            <a href="#" class="px-5 py-2 rounded-xl bg-gradient-to-r from-indigo-500 to-pink-500 hover:opacity-90 transition">
+                Live Demo
+            </a>
+
+            <a href="#" class="px-5 py-2 rounded-xl border border-gray-600 hover:border-pink-400 transition">
+                GitHub Repo
+            </a>
+        </div>
+    </section>
+
+    <!-- LEARNING -->
+    <section class="glass rounded-2xl p-6 glow-card">
+        <h2 class="text-2xl font-semibold mb-4 gradient-text">🧠 What I Learned</h2>
+        <p class="text-gray-300 leading-relaxed">
+            Write what you learned: APIs, debugging, authentication, database design, etc.
+        </p>
+    </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center text-gray-500 py-10">
+    Built with ❤️ by Khadija Errami
+</footer>
+
+</body>
+</html>
